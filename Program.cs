@@ -12,7 +12,7 @@ namespace Perimetro_del_cuadrado
     //Inicio
     //1. Pedir la medida de un lado del cuadrado
     //2.Calcular el perimetro sumando los 4 lados
-    //3.Mostrar el perimetro
+    //3.Mostrar el perimetro CUADRADO
     //FIN
         static void Main(string[] args)
         {
