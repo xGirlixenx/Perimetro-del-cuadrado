@@ -1,29 +1,26 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Perimetro_del_cuadrado
+namespace Perimetro del cuadrado
 {
-    class Program
+    internal class Program
     {
-        //CALCULAR EL PERIMETRO DE UN CUADRADO//
-    //Inicio
-    //1. Pedir la medida de un lado del cuadrado
-    //2.Calcular el perimetro sumando los 4 lados
-    //3.Mostrar el perimetro CUADRADO
-    //FIN
         static void Main(string[] args)
         {
-            double lado, perimetro;
-            Console.WriteLine("Para calcular el perimetro, ingresa la medida de un lado solamente:");
-
-            lado = Convert.ToDouble(Console.ReadLine());
-            perimetro = 4 * lado;
-            Console.WriteLine("Valor de perimetro: " + perimetro);
-            Console.WriteLine("Recuerda que el perimetro se calcula con la siguiente formula: \nperimetro = lado + lado + lado :)");
-            Console.ReadKey();
+            string lados, medidacm;
+            int num1, num2, resultado;
+            Console.Write("Numero de lados del poligono");
+            lados = Console.ReadLine();
+            num1 = Convert.ToInt32(lados);
+            Console.Write("Medida en CM del poligono");
+            medidacm = Console.ReadLine();
+            num2 = Convert.ToInt32(medidacm);
+            resultado = num1 * num2;
+            Console.WriteLine("El perimentro es: {0} centimetros, vuelva pronto :3", resultado);
         }
     }
 }
